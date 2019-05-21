@@ -8,10 +8,8 @@ class HomeController
 {
     public function __invoke()
     {
-        $response = JsonResponse::create([
+        return JsonResponse::create([
             'Hello world!'
         ]);
-
-        return $response->send();
     }
 }
